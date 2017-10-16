@@ -11,6 +11,6 @@
 <h1>Welcome To Struts 2!</h1>
 
 <p><a href='<s:url action="edit" />' >Edit your information</a></p>
-
+<p><a href='<s:url action="helloworld" />'>Go to Helloworld</a></p>
 </body>
 </html>
