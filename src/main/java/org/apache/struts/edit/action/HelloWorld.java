@@ -1,7 +1,6 @@
 package org.apache.struts.edit.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-import com.sun.org.apache.bcel.internal.generic.FADD;
 import org.apache.struts.edit.model.Message;
 
 import java.util.Random;
@@ -9,8 +8,6 @@ import java.util.Random;
 public class HelloWorld extends ActionSupport
 {
     private Message message;
-
-
 
     public String execute() throws Exception {
 //        message = new Message("HelloWorld!");

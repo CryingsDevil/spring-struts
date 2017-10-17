@@ -8,9 +8,11 @@
 <title>Struts 2 Form Tags - Welcome</title>
 </head>
 <body>
-<h1>Welcome To Struts 2!</h1>
+    <h1>Welcome To Struts 2!</h1>
 
-<p><a href='<s:url action="edit" />' >Edit your information</a></p>
-<p><a href='<s:url action="helloworld" />'>Go to Helloworld</a></p>
+    <p><a href='<s:url action="edit" />' >Edit your information</a></p>
+    <p><a href='<s:url action="helloworld" />'>Go to Helloworld</a></p>
+    <p><a href='<s:url action="helloWorld/helloworld2" />'>Go to Helloworld2</a></p>
+    <p><a href='<s:url action="userInformation/userDisplay" />'>User information</a></p>
 </body>
 </html>

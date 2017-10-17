@@ -39,9 +39,6 @@ public class Person
         this.lastName = lastName;
     }
 
-
-
-
 	public void setSport(String sport) {
 		this.sport = sport;
 	}

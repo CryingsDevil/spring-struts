@@ -1,0 +1,25 @@
+Struts2中，在配置文件xml中注册指令使服务器根据前段请求调用后台的代码。
+注册指令标准格式为：
+<action name="edit" class="org.apache.struts.edit.action.EditAction" method="input">
+    <result name="input">/jsp/edit.jsp</result>
+    <result name="error">/jsp.error.jsp</result>
+</action>
+其中：
+action name 为前端页面请求的名称
+class 为后台相应请求的对应路径
+method 为前端页面请求的路径
+result name 为后台返回结果名称，result name后路径为前端依据后台反馈的结果导向的页面路径。
+    其中可以添加多个result name标签，让前端根据后台返回的结果值自行选择需要导向的页面。
+
+include标签：Struts2 xml配置文件可以使用include标签来包含存放在指定目录下的别的配置文件，例：
+<include file="org.apache.struts.edit.config.userInformation.xml" />
+说明：在org.apache.struts.edit.config路径下有一个userInformation.xml的配置文件，该文件中注册的Action现在已经被启用
+
+namespace标签：用来划分package
+Struts的package和Java的package相似（几乎相同）
+namespace不设置时，默认为空，使用URL访问Action时需要加上namespace字段。例：
+服务器地址为：http://localhost:8080
+package:default  namespace:  在访问该包下的Action input 时地址为： http://localhost:8080/input.action
+package:HelloWorld  namespace:HelloWorld 在访问该包下的Action input 时地址为： http://localhost:8080/HelloWorld/input.action
+当Action 有namespace字段是，从jsp中访问的方法：直接在URL前加入namespace字段，例：见index.jsp 中HelloWorld2 Action的URL
+

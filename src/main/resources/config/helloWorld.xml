@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="helloWorld" namespace="/helloWorld" extends="struts-default">
+        <!-- If no class attribute is specified the framework will assume success and
+       render the result index.jsp -->
+        <!-- If no name value for the result node is specified the success value is the default -->
+
+        <action name="helloworld2" class="org.apache.struts.edit.action.HelloWorld2" method="execute">
+            <result name="success">/jsp/helloworld.jsp</result>
+            <result name="error">/jsp/helloworld2.jsp</result>
+        </action>
+
+        <!--<action name="helloworld3" class="org.apache.struts.edit.action.HelloWorld2" method="randomPrint">-->
+            <!--<result name="success">/jsp/helloworld.jsp</result>-->
+            <!--<result name="error">/jsp/helloworld2.jsp</result>-->
+        <!--</action>-->
+
+    </package>
+</struts>
