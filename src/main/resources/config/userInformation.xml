@@ -5,7 +5,7 @@
 <struts>
     <package name="userInformation" namespace="/userInformation" extends="struts-default">
         <action name="userDisplay" class="org.apache.struts.edit.action.userInformation" >
-            <result name="success">/jsp/userDisplay</result>
+            <result name="success">/jsp/userDisplay.jsp</result>
         </action>
     </package>
 </struts>

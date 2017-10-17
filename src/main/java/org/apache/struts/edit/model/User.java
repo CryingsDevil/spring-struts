@@ -28,14 +28,14 @@ public class User
         return password;
     }
 
-    public String getSign()
-    {
-        return sign;
-    }
-
     public void setSign(String sign)
     {
         this.sign = sign;
+    }
+
+    public String getSign()
+    {
+        return sign;
     }
 
     public void setPhoneNumber(String phoneNumber)

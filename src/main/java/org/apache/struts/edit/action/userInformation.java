@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class userInformation extends ActionSupport
 {
-    private  User usr;
+    private User usr = new User();
 
     public userInformation(){}
 
