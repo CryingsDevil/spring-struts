@@ -9,7 +9,7 @@ import org.apache.struts2.convention.annotation.Result;
 
 import java.util.Random;
 
-@ParentPackage("struts-default")
+@ParentPackage("helloWorld")
 @Namespace("/helloWorld")
 public class HelloWorld2 extends ActionSupport
 {
@@ -52,7 +52,7 @@ public class HelloWorld2 extends ActionSupport
         this.message.setMsg(mes);
     }
 
-    @Action(value = "helloworld3", results = {@Result(name = "success", location = "/jsp/helloworld.jsp"),
+    @Action(value = "helloworld2", results = {@Result(name = "success", location = "/jsp/helloworld.jsp"),
                                               @Result(name = "error", location = "/jsp/helloworld2.jsp")})
     public String randomPrint(){
         message = new Message();

@@ -4,7 +4,19 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
     <package name="userInformation" namespace="/userInformation" extends="struts-default">
-        <action name="userDisplay" class="org.apache.struts.edit.action.userInformation" >
+        <action name="userDisplay" class="org.apache.struts.edit.action.userInformation" method="execute">
+            <result name="success">/jsp/userDisplay.jsp</result>
+        </action>
+        
+        <action name="userRegister">
+            <result>/jsp/postTest.jsp</result>
+        </action>
+
+        <action name="index">
+            <result>/index.jsp</result>
+        </action>
+        
+        <action name="register" class="org.apache.struts.edit.action.userInformation" method="registerUser" >
             <result name="success">/jsp/userDisplay.jsp</result>
         </action>
     </package>

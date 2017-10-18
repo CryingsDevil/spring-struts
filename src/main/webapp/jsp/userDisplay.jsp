@@ -13,18 +13,21 @@
 </head>
     <br>
     <h2>The information of user is: </h2>
-    <br>User Name is: <s:property value="usr.userName"/>
+    <br>User Name is: <s:property value="user.userName"/>
     <br>Password is: <s:property value="#userKey.password"/>
-    <br>Sing is: <s:property value="#action.usr.sign" />
-    <br>Phone number is: <s:property value="#userReq.usr.phoneNumber" />
+    <br>Sign is: <s:property value="#action.user.sign" />
+    <br>Phone number is: <s:property value="#userReq.user.phoneNumber" />
     <br>Address is: <s:property value="#userMap.address" />
     <br><br>
     <h2>The following information is get from request</h2>
     <br>User Name is: <s:property value="#request.userKey.userName" />
     <br>User Name is: <s:property value="#request.userMap.userName" />
     <br>User Name is: <s:property value="#request.userReq.userName" />
-    <br>User Name is: <s:property value="#request.usr.userName" />
-    <br>User Name is: <s:property value="#request.action.usr.userName" />
-
+    <br>User Name is: <s:property value="#request.user.userName" />
+    <br>User Name is: <s:property value="#request.action.user.userName" />
+    <br><br>
+    <p><a href='<s:url action="userRegister" />'><h2>Now input your personal information!</h2></a></p>
+    <p><a href='<s:url action="index" />'><h2>Back to index by action!</h2></a></p>
+    <p><a href="index.jsp"/><h2>Back to index by direct link!</h2></a></p>
 </body>
 </html>

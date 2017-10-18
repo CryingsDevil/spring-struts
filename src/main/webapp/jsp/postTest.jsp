@@ -16,8 +16,13 @@
 </head>
 <body>
     <h2>Please input your personal information in the following table!</h2>
-    <s: form action="saveUser" method="post">
-
-    <s:/form>
+    <s:form name="userLogin" method="post" action="register">
+        <s:textfield key="user.userName"/>
+        <s:password key="user.password" />
+        <s:textfield key="user.sign" />
+        <s:textfield key="user.phoneNumber" />
+        <s:textfield key="user.address" />
+        <s:submit key="submit" />
+    </s:form>
 </body>
 </html>

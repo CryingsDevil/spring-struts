@@ -8,7 +8,7 @@
        render the result index.jsp -->
         <!-- If no name value for the result node is specified the success value is the default -->
 
-        <action name="helloworld2" class="org.apache.struts.edit.action.HelloWorld2" method="execute">
+        <action name="helloworld2" class="org.apache.struts.edit.action.HelloWorld2" method="randomPrint">
             <result name="success">/jsp/helloworld.jsp</result>
             <result name="error">/jsp/helloworld2.jsp</result>
         </action>
